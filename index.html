@@ -1,129 +1,627 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="scroll-smooth">
 
 <head>
-  <base href="./">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos Calvo - Senior Mobile Engineer</title>
+    <meta name="description" content="Hi! I'm Marcos, a guy with a passion for computers and new technologies.">
+    <meta name="keywords"
+        content="marcos, cg, marcos cg, calvo, garcia, marcos calvo garcia, marcos angel calvo garcia, angel, android, ios, flutter, desarrollo, development, desarrollador, developer, mobile, móvil, móviles, app, mobile app, app móvil, aplicación, web, html, css, java, javascript, xml, php, kotlin, swift, dart, mvvm, software architect, ingeniero, ingeniería, engineer, engineering, universidad, university, it, computer, programming, programación">
+    <meta name="author" content="Marcos Calvo García">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Marcos Calvo - Senior Mobile Engineer">
+    <meta property="og:description" content="Hi! I'm Marcos, a guy with a passion for computers and new technologies.">
+    <meta property="og:site_name" content="Marcos Calvo - Senior Mobile Engineer">
+    <meta name="twitter:title" content="Marcos Calvo - Senior Mobile Engineer">
+    <meta name="twitter:description" content="Hi! I'm Marcos, a guy with a passion for computers and new technologies.">
 
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <title>Marcos Calvo - Mobile Engineer</title>
-  <meta name="description" content="Hi! I'm Marcos, a guy with a passion for computers and new technologies.">
-  <meta name="keywords"
-    content="marcos, cg, marcos cg, calvo, garcia, marcos calvo garcia, marcos angel calvo garcia, angel, android, ios, flutter, desarrollo, development, desarrollador, developer, mobile, móvil, móviles, app, mobile app, app móvil, aplicación, web, html, css, java, javascript, xml, php, kotlin, swift, dart, mvvm, software architect, ingeniero, ingeniería, engineer, engineering, universidad, university, it, computer, programming, programación">
-  <meta name="author" content="Marcos Calvo García">
-  <meta name="robots" content="index">
-  <meta name="robots" content="follow">
-  <meta name="googlebot" content="index">
-  <meta name="theme-color" content="#222427">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Marcos Calvo - Mobile Engineer">
-  <meta property="og:description" content="Hi! I'm Marcos, a guy with a passion for computers and new technologies.">
-  <meta property="og:url" content="https://www.marcoscg.com">
-  <meta property="og:site_name" content="Marcos Calvo - Mobile Engineer">
-  <meta property="og:image" content="https://www.marcoscg.com/assets/assets/images/profile.jpg">
-  <meta name="twitter:title" content="Marcos Calvo - Mobile Engineer">
-  <meta name="twitter:description" content="Hi! I'm Marcos, a guy with a passion for computers and new technologies.">
-  <meta name="twitter:image" content="https://www.marcoscg.com/assets/assets/images/profile.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="author" href="https://marcoscg.com/humans.txt">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Marcos CG">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png">
-
-  <link rel="manifest" href="manifest.json">
-
-
-  <style id="splash-screen-style">
-    html {
-      height: 100%
-    }
-
-    body {
-      margin: 0;
-      min-height: 100%;
-      background-color: #222427;
-      background-size: 100% 100%;
-    }
-
-    .center {
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-    }
-
-    .contain {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-
-    .stretch {
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
-
-    .cover {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .bottom {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      -ms-transform: translate(-50%, 0);
-      transform: translate(-50%, 0);
-    }
-
-    .bottomLeft {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
-
-    .bottomRight {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
-  </style>
-  <script id="splash-screen-script">
-    function removeSplashFromWeb() {
-      document.getElementById("splash")?.remove();
-      document.getElementById("splash-branding")?.remove();
-      document.body.style.background = "transparent";
-    }
-  </script>
+    <link rel="author" href="humans.txt">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="css/output.css">
 </head>
 
-<body>
-  <picture id="splash">
-    <source
-      srcset="splash/img/light-1x.png 1x, splash/img/light-2x.png 2x, splash/img/light-3x.png 3x, splash/img/light-4x.png 4x"
-      media="(prefers-color-scheme: light)">
-    <source
-      srcset="splash/img/dark-1x.png 1x, splash/img/dark-2x.png 2x, splash/img/dark-3x.png 3x, splash/img/dark-4x.png 4x"
-      media="(prefers-color-scheme: dark)">
-    <img class="center" aria-hidden="true" src="splash/img/light-1x.png" alt="">
-  </picture>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300">
+    <nav
+        class="fixed w-full z-50 top-0 start-0 border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md transition-all duration-300">
+        <div class="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse group">
+                <div
+                    class="w-10 h-10 rounded-xl bg-linear-to-tr from-sky-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl group-hover:scale-105 transition-transform">
+                    MC
+                </div>
+                <span class="self-center text-2xl font-bold whitespace-nowrap tracking-tight">Marcos Calvo</span>
+            </a>
 
-  <script src="flutter_bootstrap.js" async=""></script>
+            <button data-collapse-toggle="navbar-sticky" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-slate-500 rounded-lg md:hidden hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800 focus:outline-none"
+                aria-controls="navbar-sticky" aria-expanded="false"
+                onclick="document.getElementById('navbar-sticky').classList.toggle('hidden')">
+                <span class="sr-only">Open main menu</span>
+                <span class="material-symbols-outlined icon-normal">menu</span>
+            </button>
 
+            <div class="hidden w-full md:block md:w-auto" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-slate-100 rounded-lg bg-slate-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-slate-800 md:dark:bg-transparent dark:border-slate-700 items-center">
+                    <li><a href="#about"
+                            class="block py-2 px-3 text-slate-900 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-sky-600 md:p-0 dark:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700 transition-colors">About</a>
+                    </li>
+                    <li><a href="#experience"
+                            class="block py-2 px-3 text-slate-900 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-sky-600 md:p-0 dark:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700 transition-colors">Experience</a>
+                    </li>
+                    <li><a href="#education"
+                            class="block py-2 px-3 text-slate-900 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-sky-600 md:p-0 dark:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700 transition-colors">Education</a>
+                    </li>
+                    <li><a href="#skills"
+                            class="block py-2 px-3 text-slate-900 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-sky-600 md:p-0 dark:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700 transition-colors">Skills</a>
+                    </li>
+                    <li><a href="#contact"
+                            class="block py-2 px-3 text-slate-900 rounded hover:bg-slate-100 md:hover:bg-transparent md:hover:text-sky-600 md:p-0 dark:text-white dark:hover:bg-slate-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-slate-700 transition-colors">Contact</a>
+                    </li>
+                    <!-- Botón CV en Nav -->
+                    <li class="mt-2 md:mt-0">
+                        <a href="files/marcoscg-resume.pdf" target="_blank"
+                            class="text-white bg-slate-900 hover:bg-slate-800 focus:ring-4 focus:ring-slate-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100 focus:outline-none dark:focus:ring-slate-800 transition-colors flex items-center gap-2 group">
+                            <span class="material-symbols-outlined icon-normal">download</span> Download CV
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <section id="about"
+        class="min-h-screen flex items-center justify-center pt-40 pb-20 relative overflow-hidden bg-grid-pattern pattern-background">
+        <div class="absolute top-20 right-10 w-72 h-72 bg-sky-500/10 rounded-full blur-3xl -z-10 animate-pulse"></div>
+        <div class="absolute bottom-20 left-10 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 text-center z-10">
+            <!--<div class="mb-6 inline-block">
+                <span class="bg-sky-100 text-sky-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-sky-900 dark:text-sky-300 border border-sky-200 dark:border-sky-800 uppercase tracking-wider">
+                    Available for projects
+                </span>
+            </div>-->
+
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-slate-900 dark:text-white">
+                Hi, I'm <span class="text-transparent bg-clip-text bg-linear-to-r from-sky-500 to-indigo-600">Marcos
+                    Calvo</span>
+            </h1>
+
+            <h2 class="text-2xl md:text-3xl font-semibold text-slate-600 dark:text-slate-400 mb-8">
+                Senior Mobile Engineer
+            </h2>
+
+            <p class="max-w-2xl mx-auto text-lg md:text-xl text-slate-600 dark:text-slate-400 mb-10 leading-relaxed">
+                Passionate engineer dedicated to creating user-centric mobile applications.
+                Specialized in <span class="text-green-500 dark:text-green-400 font-semibold">Native Android</span>,
+                with solid experience in
+                <span class="text-blue-500 dark:text-blue-400 font-semibold">iOS</span> and cross-platform development
+                with <span class="text-sky-700 dark:text-sky-500 font-semibold">Flutter</span>.
+                I transform complex ideas into fluid user experiences and robust architectures.
+            </p>
+
+            <!--<div class="flex flex-wrap justify-center gap-4 mb-12">
+                <div class="flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 hover:-translate-y-1 transition-transform cursor-default">
+                    <i class="fa-brands fa-android text-green-500 dark:text-green-400 text-2xl"></i>
+                    <span class="font-medium">Android</span>
+                </div>
+                <div class="flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 hover:-translate-y-1 transition-transform cursor-default">
+                    <i class="fa-brands fa-apple text-blue-500 dark:text-blue-400 text-2xl"></i>
+                    <span class="font-medium">iOS</span>
+                </div>
+                <div class="flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 hover:-translate-y-1 transition-transform cursor-default">
+                    <i class="fa-brands fa-flutter text-sky-700 dark:text-sky-500 text-xl"></i>
+                    <span class="font-medium">Flutter</span>
+                </div>
+                <div class="flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 hover:-translate-y-1 transition-transform cursor-default">
+                    <i class="fa-brands fa-kickstarter text-purple-500 text-xl"></i>
+                    <span class="font-medium">Kotlin</span>
+                </div>
+                <div class="flex items-center gap-2 px-4 py-2 bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 hover:-translate-y-1 transition-transform cursor-default">
+                    <i class="fa-brands fa-swift text-orange-500 text-xl"></i>
+                    <span class="font-medium">Swift</span>
+                </div>
+            </div>-->
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact"
+                    class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-sky-600 rounded-lg hover:bg-sky-700 focus:ring-4 focus:ring-sky-300 dark:focus:ring-sky-900 transition-all">
+                    <span class="material-symbols-outlined icon-normal mr-2">email</span> Contact Me
+                </a>
+                <a href="files/marcoscg-resume.pdf" target="_blank"
+                    class="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-slate-900 bg-white border border-slate-200 rounded-lg hover:bg-slate-100 hover:text-sky-600 focus:z-10 focus:ring-4 focus:outline-none focus:ring-slate-200 focus:text-sky-600 dark:bg-slate-800 dark:text-slate-100 dark:border-slate-600 dark:hover:text-white dark:hover:bg-slate-700 dark:focus:ring-slate-700 transition-all">
+                    <span class="material-symbols-outlined icon-normal mr-2">download</span> Download CV
+                </a>
+            </div>
+        </div>
+
+        <div
+            class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-slate-400 dark:text-slate-600">
+            <a href="#experience" aria-label="Scroll down">
+                <span class="material-symbols-outlined text-4xl">keyboard_arrow_down</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="experience"
+        class="py-24 px-2 md:px-0 bg-white dark:bg-slate-900 transition-colors duration-300 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Professional Experience
+                </h2>
+                <div class="h-1 w-20 bg-sky-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="relative">
+                <div
+                    class="absolute left-3 md:left-1/2 top-0 h-full w-px bg-slate-200 dark:bg-slate-700 transform md:-translate-x-1/2">
+                </div>
+
+                <div class="relative mb-12 md:mb-0 reveal group">
+                    <div class="md:flex items-center justify-between w-full">
+
+                        <div
+                            class="absolute left-4 md:left-1/2 w-10 md:w-12 h-10 md:h-12 rounded-full bg-slate-50 dark:bg-slate-850 border-2 border-slate-200 dark:border-slate-700 flex items-center justify-center text-sky-500 z-10 transform -translate-x-6 md:-translate-x-1/2 icon-normal">
+                            <span class="material-symbols-outlined md:text-2xl">work</span>
+                        </div>
+
+                        <div class="pl-12 md:pl-0 pt-2 pb-4 md:pb-2 md:w-[calc(50%-4rem)] md:text-right">
+                            <span
+                                class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-200 w-fit">
+                                <span class="material-symbols-outlined text-sm mr-1">event</span> 2022 - Present
+                            </span>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mt-4">Senior Mobile Engineer
+                            </h3>
+                            <p class="text-sky-600 dark:text-sky-400 font-semibold text-lg">Hiberus</p>
+                        </div>
+
+                        <div class="pl-12 md:pl-0 md:w-[calc(50%-4rem)]">
+                            <div
+                                class="bg-slate-50 dark:bg-slate-800 px-6 py-4 rounded-2xl border border-slate-100 dark:border-slate-700 relative">
+                                <p class="text-normal text-slate-600 dark:text-slate-300 mb-3">Led the technical
+                                    direction and end-to-end development of <strong>key mobile projects</strong> for
+                                    major clients, including Inditex and Huawei, from concept to deployment across both
+                                    <strong>Android</strong> and <strong>iOS</strong> platforms.
+                                </p>
+                                <ul
+                                    class="list-none list-inside pl-1 text-slate-600 dark:text-slate-300 space-y-2 text-normal">
+                                    <li class="flex items-center gap-3">
+                                        <span
+                                            class="material-symbols-outlined text-sky-600 dark:text-sky-400 text-base">arrow_forward_ios</span>
+                                        <span>Technical leadership in mobile application development projects.</span>
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <span
+                                            class="material-symbols-outlined text-sky-600 dark:text-sky-400 text-base">arrow_forward_ios</span>
+                                        <span>Design and implementation of advanced software architectures.</span>
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <span
+                                            class="material-symbols-outlined text-sky-600 dark:text-sky-400 text-base">arrow_forward_ios</span>
+                                        <span>Coordination of multidisciplinary teams.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative mb-12 md:mb-0 reveal group md:mt-16">
+                    <div class="md:flex items-center flex-row-reverse justify-between w-full">
+
+                        <div
+                            class="absolute left-4 md:left-1/2 w-10 md:w-12 h-10 md:h-12 rounded-full bg-slate-50 dark:bg-slate-850 border-2 border-slate-200 dark:border-slate-700 flex items-center justify-center text-sky-500 z-10 transform -translate-x-6 md:-translate-x-1/2 icon-normal">
+                            <span class="material-symbols-outlined md:text-2xl">work</span>
+                        </div>
+
+                        <div class="pl-12 md:pl-0 pt-2 pb-4 md:pb-2 md:w-[calc(50%-4rem)] md:text-left">
+                            <span
+                                class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-200 w-fit">
+                                <span class="material-symbols-outlined text-sm mr-1">event</span> 2018 - 2022
+                            </span>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mt-4">Mobile Developer</h3>
+                            <p class="text-sky-600 dark:text-sky-400 font-semibold text-lg">Hiberus</p>
+                        </div>
+
+                        <div class="pl-12 md:pl-0 md:w-[calc(50%-4rem)]">
+                            <div
+                                class="bg-slate-50 dark:bg-slate-800 px-6 py-4 rounded-2xl border border-slate-100 dark:border-slate-700 relative">
+                                <p class="text-normal text-slate-600 dark:text-slate-300 mb-3">Developed and maintained
+                                    several client applications, working across the <strong>full mobile development
+                                        lifecycle</strong>.</p>
+                                <ul
+                                    class="list-none list-inside pl-1 text-slate-600 dark:text-slate-300 space-y-2 text-normal">
+                                    <li class="flex items-center gap-3">
+                                        <span
+                                            class="material-symbols-outlined text-sky-600 dark:text-sky-400 text-base">arrow_forward_ios</span>
+                                        <span>Mobile app development on Android and iOS platforms.</span>
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <span
+                                            class="material-symbols-outlined text-sky-600 dark:text-sky-400 text-base">arrow_forward_ios</span>
+                                        <span>Use of technologies such as Kotlin, Java, Swift, Jetpack Compose and
+                                            SwiftUI.</span>
+                                    </li>
+                                    <li class="flex items-center gap-3">
+                                        <span
+                                            class="material-symbols-outlined text-sky-600 dark:text-sky-400 text-base">arrow_forward_ios</span>
+                                        <span>Use of design patterns such as Clean Architecture and MVVM.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative mb-12 md:mb-0 reveal group md:mt-16">
+                    <div class="md:flex items-center justify-between w-full">
+
+                        <div
+                            class="absolute left-4 md:left-1/2 w-10 md:w-12 h-10 md:h-12 rounded-full bg-slate-50 dark:bg-slate-850 border-2 border-slate-200 dark:border-slate-700 flex items-center justify-center text-sky-500 z-10 transform -translate-x-6 md:-translate-x-1/2 icon-normal">
+                            <span class="material-symbols-outlined md:text-2xl">work</span>
+                        </div>
+
+                        <div class="pl-12 md:pl-0 pt-2 pb-4 md:pb-2 md:w-[calc(50%-4rem)] md:text-right">
+                            <span
+                                class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-200 w-fit">
+                                <span class="material-symbols-outlined text-sm mr-1">event</span> 2018 - 2019
+                            </span>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mt-4">Web Developer</h3>
+                            <p class="text-sky-600 dark:text-sky-400 font-semibold text-lg">San Jorge University</p>
+                        </div>
+
+                        <div class="pl-12 md:pl-0 md:w-[calc(50%-4rem)]">
+                            <div
+                                class="bg-slate-50 dark:bg-slate-800 px-6 py-4 rounded-2xl border border-slate-100 dark:border-slate-700 relative">
+                                <p class="text-normal text-slate-600 dark:text-slate-300">Development of a <strong>web
+                                        page repository</strong> for the games developed by the students of the Video
+                                    Game Design and Development degree</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education"
+        class="py-24 px-2 md:px-0 bg-slate-50 dark:bg-slate-950 transition-colors duration-300 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Education</h2>
+                <div class="h-1 w-20 bg-emerald-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="relative">
+                <div
+                    class="absolute left-3 md:left-1/2 top-0 h-full w-px bg-slate-200 dark:bg-slate-700 transform md:-translate-x-1/2">
+                </div>
+
+                <div class="relative mb-12 md:mb-0 reveal group">
+                    <div class="md:flex items-center justify-between w-full">
+
+                        <div
+                            class="absolute left-4 md:left-1/2 w-10 md:w-12 h-10 md:h-12 rounded-full bg-white dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-700 flex items-center justify-center text-emerald-500 z-10 transform -translate-x-6 md:-translate-x-1/2 icon-normal">
+                            <span class="material-symbols-outlined md:text-2xl">school</span>
+                        </div>
+
+                        <div class="pl-12 md:pl-0 pt-2 pb-4 md:pb-2 md:w-[calc(50%-4rem)] md:text-right">
+                            <span
+                                class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200 w-fit">
+                                <span class="material-symbols-outlined text-sm mr-1">event</span> 2021 - 2022
+                            </span>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mt-4">Master's Degree</h3>
+                            <p class="text-emerald-600 dark:text-emerald-400 font-semibold text-lg">San Jorge University
+                            </p>
+                        </div>
+
+                        <div class="pl-12 md:pl-0 md:w-[calc(50%-4rem)]">
+                            <div
+                                class="bg-white dark:bg-slate-900 px-6 py-4 rounded-2xl border border-slate-100 dark:border-slate-700 relative">
+                                <h3 class="text-emerald-600 dark:text-emerald-400 font-semibold text-lg mb-2">Advanced
+                                    Software Technologies for Mobile Devices</h3>
+                                <p class="text-normal text-slate-600 dark:text-slate-300">Specialized in Mobile Devices.
+                                    Focused on advanced architecture, performance optimization, and modern mobile
+                                    ecosystems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative mb-12 md:mb-0 reveal group md:mt-16">
+                    <div class="md:flex items-center flex-row-reverse justify-between w-full">
+
+                        <div
+                            class="absolute left-4 md:left-1/2 w-10 md:w-12 h-10 md:h-12 rounded-full bg-white dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-700 flex items-center justify-center text-emerald-500 z-10 transform -translate-x-6 md:-translate-x-1/2 icon-normal">
+                            <span class="material-symbols-outlined md:text-2xl">school</span>
+                        </div>
+
+                        <div class="pl-12 md:pl-0 pt-2 pb-4 md:pb-2 md:w-[calc(50%-4rem)] md:text-left">
+                            <span
+                                class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200 w-fit">
+                                <span class="material-symbols-outlined text-sm mr-1">event</span> 2016 - 2021
+                            </span>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mt-4">Bachelor's Degree</h3>
+                            <p class="text-emerald-600 dark:text-emerald-400 font-semibold text-lg">San Jorge University
+                            </p>
+                        </div>
+
+                        <div class="pl-12 md:pl-0 md:w-[calc(50%-4rem)]">
+                            <div
+                                class="bg-white dark:bg-slate-900 px-6 py-4 rounded-2xl border border-slate-100 dark:border-slate-700 relative">
+                                <h3 class="text-emerald-600 dark:text-emerald-400 font-semibold text-lg mb-2">Computer
+                                    Science</h3>
+                                <p class="text-normal text-slate-600 dark:text-slate-300">Comprehensive foundation in
+                                    computer science, software engineering principles, and algorithms.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 bg-white dark:bg-slate-900 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Key Technologies & Skills
+                </h2>
+                <div class="h-1 w-20 bg-indigo-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="columns columns-1 md:columns-2 gap-8 space-y-8">
+
+                <div
+                    class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl reveal border border-slate-100 dark:border-slate-700">
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="w-10 md:w-12 h-10 md:h-12 rounded-lg bg-sky-100 dark:bg-sky-900/50 flex items-center justify-center mr-4 text-sky-600 dark:text-sky-400">
+                            <span class="material-symbols-outlined icon-normal">code</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Languages</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Kotlin</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Java</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Swift</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Dart</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">JavaScript</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">TypeScript</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">SQL</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Python</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">PHP</span>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl reveal border border-slate-100 dark:border-slate-700">
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="w-10 md:w-12 h-10 md:h-12 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center mr-4 text-indigo-600 dark:text-indigo-400">
+                            <span class="material-symbols-outlined icon-normal">layers</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Frameworks & Libraries</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Android
+                            Jetpack</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Jetpack
+                            Compose</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Hilt
+                            / Koin</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Retrofit</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Room</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Coroutines
+                            & Flow</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">SwiftUI</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Flutter</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">JUnit</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">MockK</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Mockito</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Espresso</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Detekt</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Swift
+                            Testing</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Flutter
+                            Test</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">RX
+                            Programming</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">jQuery</span>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl reveal border border-slate-100 dark:border-slate-700">
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="w-10 md:w-12 h-10 md:h-12 rounded-lg bg-emerald-100 dark:bg-emerald-900/50 flex items-center justify-center mr-4 text-emerald-600 dark:text-emerald-400">
+                            <span class="material-symbols-outlined icon-normal">account_tree</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Patterns & Methodologies</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Clean
+                            Architecture</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">MVVM</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">MVI</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Agile
+                            / SCRUM</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Unit
+                            Testing</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Code
+                            Review</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Pair
+                            Programming</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">CI/CD</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Team
+                            Colaboration</span>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl reveal border border-slate-100 dark:border-slate-700">
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="w-10 md:w-12 h-10 md:h-12 rounded-lg bg-orange-100 dark:bg-orange-900/50 flex items-center justify-center mr-4 text-orange-600 dark:text-orange-400">
+                            <span class="material-symbols-outlined icon-normal">build</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Tools & Platforms</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Android
+                            Studio</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Xcode</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Visual
+                            Studio Code</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Git</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Sonar</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Jenkins</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">GitHub
+                            Actions</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">API
+                            Rest</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Firebase</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Swagger</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Figma</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Jira</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">GitHub
+                            Copilot</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Claude
+                            Code</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Cline
+                            AI</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">Gemini</span>
+                        <span
+                            class="px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-600 rounded-md text-sm font-medium text-slate-700 dark:text-slate-300">LiteLMM</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact"
+        class="py-24 bg-slate-50 dark:bg-slate-950 transition-colors duration-300 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-sky-500 via-indigo-500 to-sky-500"></div>
+
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-6 reveal">Let's Talk!</h2>
+            <p class="text-lg text-slate-600 dark:text-slate-400 mb-10 reveal">
+                I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+            </p>
+
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 reveal">
+                <a href="mailto:hello@marcoscg.com"
+                    class="flex items-center gap-3 px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-full font-bold text-lg hover:scale-105 transition-transform shadow-xl">
+                    <span class="material-symbols-outlined icon-normal">email</span> hello@marcoscg.com
+                </a>
+            </div>
+
+            <div class="mt-12 flex justify-center space-x-8 reveal">
+                <a href="https://linkedin.com/in/marcoscg" target="_blank"
+                    class="text-slate-400 hover:text-sky-600 dark:hover:text-sky-400 transition-colors text-3xl">
+                    <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://github.com/mcalvog" target="_blank"
+                    class="text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors text-3xl">
+                    <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 bg-white dark:bg-slate-950 border-t border-slate-100 dark:border-slate-900 text-center">
+        <p class="text-slate-500 dark:text-slate-500 text-sm">
+            Like what you see? It was created using <a href="https://tailwindcss.com" target="_blank">Tailwind CSS</a>
+            and the creative touch of <a href="https://gemini.google.com/canvas" target="_blank">Gemini Canvas</a>.
+        </p>
+    </footer>
+
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+        reveal();
+
+    </script>
 </body>
 
 </html>

@@ -12,9 +12,10 @@ _________________________________________________________________
 Marcos Calvo (@marcoscgdev)
 
 /* THANKS */
-Flutter (@FlutterDev on X)
+Tailwind CSS (tailwindcss.com)
+Gemini Canvas (gemini.google.com/canvas)
 
 /* SITE */
 Standards: HTML5, CSS3
-Components: Flutter
+Components: Tailwind CSS
 Software: Visual Studio Code
